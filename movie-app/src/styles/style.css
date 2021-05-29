@@ -1,1 +1,39 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+  background-color: #30475e;
+}
+
+.navbar {
+  background-color: #222831;
+  color: #f05454;
+  font-family: 'Quicksand';
+}
+
+.navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 75%;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-container .search input {
+  padding: 10px;
+  outline: none;
+  margin: 0rem 0.1rem;
+}
+
+.navbar-container .search button {
+  color: #f05454;
+  padding: 9.5px 10px;
+  font-family: 'Quicksand';
+  font-weight: 800;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
