@@ -2,7 +2,7 @@ const MovieCard = (props) => {
 
     if (props.cards === undefined) {
         return (
-            <div>
+            <div className="noResult">
                 <h1>nothing was found</h1>
             </div>
         )
