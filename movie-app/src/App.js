@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 function App() {
 
   const [cards, setCards] = useState([]);
-  const [term, setTerm] = useState("boat");
+  const [term, setTerm] = useState("batman");
 
   useEffect(() => {
     fetch(`http://www.omdbapi.com/?apikey=203042a4&s=${term}`)
@@ -15,7 +15,7 @@ function App() {
   
   return (
     <div className="App">
-      <Navbar />
+      <Navbar search={setTerm} />
       <MovieCard cards={cards} />
     </div>
   );
