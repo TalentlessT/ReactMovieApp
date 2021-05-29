@@ -1,15 +1,24 @@
 const MovieCard = (props) => {
 
-    return (
-        <div>
-            {props.cards.map((movie, index) =>
-                <div className="movieCard" key={index}>
-                    <h1>{movie.Title}</h1>
-                    <img src={movie.Poster} alt="movie" />
-                </div>
-            )}
-        </div>
-    );
+    if (props.cards === undefined) {
+        return (
+            <div>
+                <h1>nothing was found</h1>
+            </div>
+        )
+    }
+    else {
+        return (
+            <div className="cards-container">
+                {props.cards.map((movie, index) =>
+                    <div className="movieCard" key={index}>
+                        <img src={movie.Poster} alt="movie" />
+                        <h5>{movie.Title}</h5>
+                    </div>
+                )}
+            </div>
+        );
+    }
 }
 
 export default MovieCard;
