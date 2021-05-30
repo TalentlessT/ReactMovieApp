@@ -12,7 +12,7 @@ const MovieCard = (props) => {
             <div className="cards-container">
                 {props.cards.map((movie, index) =>
                     <div className="movieCard" key={index}>
-                        <img src={movie.Poster} alt="movie" />
+                        <img src={movie.Poster} alt="movie" className="movieImage" />
                         <h5>{movie.Title}</h5>
                     </div>
                 )}

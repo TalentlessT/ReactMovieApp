@@ -2,6 +2,7 @@ $colorWhite: #dddddd
 $colorRed: #f05454
 $colorBlueDark: #30475e
 $colorBlack: #222831
+$colorRedLight: #ff0000
 
 body
     margin: 0
@@ -36,7 +37,7 @@ body
 
 .cards-container
     display: grid
-    grid-template-columns: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr 1fr
     justify-items: center;
 
 .movieCard
@@ -47,8 +48,13 @@ body
     font-weight: 400
     margin: 2rem 0
     border-bottom: 2px solid $colorRed
+    .movieImage
+        max-width: 300px
+        min-width: 280px
+        max-height: 400px
+        min-height: 380px
 
-//nothing was found
+//nothing was found (if data array from fetch is empty)
 
 .noResult
     text-align: center
