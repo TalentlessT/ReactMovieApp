@@ -62,10 +62,31 @@ body {
   min-height: 380px;
 }
 
+.footer {
+  background-color: #222831;
+  color: #f05454;
+  font-family: 'Quicksand';
+  min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer h4 {
+  margin: 0;
+}
+
 .noResult {
   text-align: center;
   margin-top: 4rem;
   color: #dddddd;
+  min-height: 90vh;
   font-family: 'Quicksand';
 }
 

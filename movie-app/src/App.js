@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar'
 import MovieCard from './components/MovieCard'
+import Footer from './components/Footer'
 import { useEffect, useState } from 'react'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <Navbar search={setTerm} />
       <MovieCard cards={cards} />
+      <Footer />
     </div>
   );
 }

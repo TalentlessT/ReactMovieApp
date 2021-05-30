@@ -9,7 +9,6 @@ body
     background-color: $colorBlueDark
 
 // Navbar Component
-
 .navbar
     background-color: $colorBlack
     color: $colorRed
@@ -34,7 +33,6 @@ body
             cursor: pointer
         
 // MovieCard Component
-
 .cards-container
     display: grid
     grid-template-columns: 1fr 1fr 1fr 1fr
@@ -53,13 +51,25 @@ body
         min-width: 280px
         max-height: 400px
         min-height: 380px
+    
+// Footer component
+.footer
+    background-color: $colorBlack
+    color: $colorRed
+    font-family: 'Quicksand'
+    min-height: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    h4
+        margin: 0
 
 // nothing was found (when data array from fetch is empty)
-
 .noResult
     text-align: center
     margin-top: 4rem
     color: $colorWhite
+    min-height: 90vh
     font-family: 'Quicksand'
 
 // Tablet size media query
