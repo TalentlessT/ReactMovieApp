@@ -45,6 +45,10 @@ body {
   justify-items: center;
 }
 
+.card-wrap {
+  min-height: 100vh;
+}
+
 .movieCard {
   color: #dddddd;
   background-color: #222831;
@@ -86,11 +90,11 @@ body {
   text-align: center;
   margin-top: 4rem;
   color: #dddddd;
-  min-height: 90vh;
+  min-height: 100vh;
   font-family: 'Quicksand';
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1340px) {
   .cards-container {
     display: -ms-grid;
     display: grid;
@@ -127,7 +131,7 @@ body {
   }
 }
 
-@media (max-width: 352px) {
+@media (max-width: 452px) {
   .search-form {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -1,8 +1,8 @@
+$colorBlueDark: #30475e
+$colorRedLight: #ff0000
+$colorBlack: #222831
 $colorWhite: #dddddd
 $colorRed: #f05454
-$colorBlueDark: #30475e
-$colorBlack: #222831
-$colorRedLight: #ff0000
 
 body
     margin: 0
@@ -38,6 +38,9 @@ body
     grid-template-columns: 1fr 1fr 1fr 1fr
     justify-items: center;
 
+.card-wrap
+    min-height: 100vh
+
 .movieCard
     color: $colorWhite
     background-color: $colorBlack
@@ -69,11 +72,11 @@ body
     text-align: center
     margin-top: 4rem
     color: $colorWhite
-    min-height: 90vh
+    min-height: 100vh
     font-family: 'Quicksand'
 
 // Tablet size media query
-@media (max-width: 1140px)
+@media (max-width: 1340px)
     .cards-container
         display: grid
         grid-template-columns: 1fr 1fr 1fr
@@ -97,6 +100,6 @@ body
         flex-direction: column
         padding-bottom: 2rem
 // Smallest devices (galaxy fold etc.)
-@media (max-width: 352px)
+@media (max-width: 452px)
     .search-form
         display: flex
