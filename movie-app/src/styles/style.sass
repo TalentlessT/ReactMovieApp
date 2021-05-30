@@ -54,10 +54,35 @@ body
         max-height: 400px
         min-height: 380px
 
-//nothing was found (if data array from fetch is empty)
+// nothing was found (when data array from fetch is empty)
 
 .noResult
     text-align: center
     margin-top: 4rem
     color: $colorWhite
     font-family: 'Quicksand'
+
+// Tablet size media query
+@media (max-width: 1140px)
+    .cards-container
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        justify-items: center;
+
+// Smaller tablet/folding phone size media query
+@media (max-width: 950px)
+    .cards-container
+        display: grid
+        grid-template-columns: 1fr 1fr
+        justify-items: center;
+
+// Mobile phone/smallest devices size media query
+@media (max-width: 650px)
+    .cards-container
+        display: grid
+        grid-template-columns: 1fr
+        justify-items: center;
+
+    .navbar-container
+        flex-direction: column
+        padding-bottom: 2rem
