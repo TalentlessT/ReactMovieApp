@@ -4,7 +4,7 @@ const Footer = () => {
 
     return ( 
         <div className="footer">
-            <h4>&copy; {currentDate}</h4>
+            <h4>&copy; {currentDate} JH</h4>
         </div>
      );
 }
