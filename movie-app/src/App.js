@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react'
 function App() {
 
   const [cards, setCards] = useState([]);
-  const [term, setTerm] = useState("batman");
+  const [term, setTerm] = useState("");
 
   useEffect(() => {
     fetch(`http://www.omdbapi.com/?apikey=203042a4&s=${term}`)

@@ -18,7 +18,7 @@ const Navbar = ( props ) => {
                 </div>
 
                 <div className="search">
-                    <form onSubmit={handleButton}>
+                    <form onSubmit={handleButton} className="search-form">
                         <input type="text" placeholder="movie..." onChange={e => setWord(e.target.value)} />
                         <button type="submit">search</button>
                     </form>
