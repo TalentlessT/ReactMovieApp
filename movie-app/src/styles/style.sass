@@ -31,12 +31,12 @@ body
             font-family: 'Quicksand'
             font-weight: 700
             cursor: pointer
-        
+
 // MovieCard Component
 .cards-container
     display: grid
     grid-template-columns: 1fr 1fr 1fr 1fr
-    justify-items: center;
+    justify-items: center
 
 .card-wrap
     min-height: 100vh
@@ -54,7 +54,36 @@ body
         min-width: 280px
         max-height: 400px
         min-height: 380px
-    
+
+.overlay
+    background-color: $colorRed
+    max-width: 300px
+    min-width: 280px
+    height: 400px
+    .overlay-info
+        display: none
+
+// MovieCard Component Overlay
+
+.movieCard:hover
+    color: $colorRed
+    .movieImage
+        display: none
+    .overlay-info
+        width: 280px
+        display: block
+        color: $colorWhite
+        h3
+            margin: 0
+            padding-top: 1rem
+            font-weight: 700
+        p
+            margin: 0
+            text-align: justify
+            max-width: 80%
+            margin: auto
+            margin-top: 1rem        
+
 // Footer component
 .footer
     background-color: $colorBlack
@@ -80,21 +109,21 @@ body
     .cards-container
         display: grid
         grid-template-columns: 1fr 1fr 1fr
-        justify-items: center;
+        justify-items: center
 
 // Smaller tablet/folding phone size media query
 @media (max-width: 950px)
     .cards-container
         display: grid
         grid-template-columns: 1fr 1fr
-        justify-items: center;
+        justify-items: center
 
 // Mobile phone/smallest devices size media query
 @media (max-width: 650px)
     .cards-container
         display: grid
         grid-template-columns: 1fr
-        justify-items: center;
+        justify-items: center
 
     .navbar-container
         flex-direction: column

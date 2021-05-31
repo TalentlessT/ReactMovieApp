@@ -10,10 +10,10 @@ function App() {
 
   useEffect(() => {
     fetch(`http://www.omdbapi.com/?apikey=203042a4&s=${term}`)
-    .then(response => response.json())
-    .then(result => setCards(result.Search))
+      .then(response => response.json())
+      .then(result => setCards(result.Search))
   })
-  
+
   return (
     <div className="App">
       <Navbar search={setTerm} />
